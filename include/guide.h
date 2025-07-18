@@ -559,6 +559,7 @@ EnumeratingChooser::~EnumeratingChooser() {
   G.LastPath = CurrentPath;
   G.NumChoices = NumChoices;
   G.Choosing = false;
+  G.TotalNodes++;
 }
 
 uint64_t EnumeratingChooser::chooseInternal(const uint64_t Choices) {
